@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <!-- имя по соглашению FormatWheel.*, так приложение находит расширения -->
+    <AssemblyName>FormatWheel.Pandoc</AssemblyName>
+    <RootNamespace>FormatWheel.Pandoc</RootNamespace>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SDK с nuget.org; для локальной разработки можно заменить на ProjectReference -->
+    <PackageReference Include="FormatWheel.Sdk" Version="1.0.*" />
+  </ItemGroup>
+
+</Project>
